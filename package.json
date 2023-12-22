@@ -1,19 +1,21 @@
 {
   "name": "task-flow-cli",
   "version": "1.0.0",
+  "type": "module",
   "description": "TaskFlowCLI is a streamlined and efficient Command-Line Interface tool designed to empower developers in managing project tasks effortlessly. Organize, prioritize, and track your tasks seamlessly, all from the command line.",
   "main": "dist/index.js",
   "repository": "https://github.com/ShaheenJawadi/task-flow-cli",
   "author": "Shaheen Jawadi",
   "license": "MIT",
   "bin": {
-    "tflow": "./dist/index.js"
+    "tflow": "./bin/tflow.js"
   },
   "scripts": {
     "build": " tsc",
     "start": "yarn build && node dist/index.js"
   },
   "devDependencies": {
+    "@types/inquirer": "^9.0.7",
     "@types/node": "^20.10.5",
     "ts-node": "^10.9.2",
     "typescript": "^5.3.3"
