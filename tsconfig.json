@@ -1,13 +1,17 @@
 {
 
-  "lib": ["es2015"],
+
   "compilerOptions": {
+    
+    "module": "commonjs",
+    "noEmitOnError": true,
+    "noImplicitAny": true,
+    "experimentalDecorators": true,  
+    "emitDecoratorMetadata": true  ,
     "outDir": "./dist",
     "rootDir": "./src",
     "strict": true,
     "target": "ES6",
-    "module": "ESNext",
-   
     "sourceMap": true,
     "esModuleInterop": true,
     "moduleResolution": "node"
