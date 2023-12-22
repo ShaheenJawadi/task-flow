@@ -6,6 +6,9 @@
   "repository": "https://github.com/ShaheenJawadi/task-flow-cli",
   "author": "Shaheen Jawadi",
   "license": "MIT",
+  "bin": {
+    "tflow": "./dist/index.js"
+  },
   "scripts": {
     "build": " tsc",
     "start": "yarn build && node dist/index.js"
@@ -14,5 +17,9 @@
     "@types/node": "^20.10.5",
     "ts-node": "^10.9.2",
     "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "commander": "^11.1.0",
+    "inquirer": "^9.2.12"
   }
 }
