@@ -1,5 +1,5 @@
 {
-  "name": "@shaheenjawadi/task-flow-cli",
+  "name": "task-flow-cli",
   "version": "1.0.0",
   "description": "TaskFlowCLI is a streamlined and efficient Command-Line Interface tool designed to empower developers in managing project tasks effortlessly. Organize, prioritize, and track your tasks seamlessly, all from the command line.",
   "main": "dist/index.js",
