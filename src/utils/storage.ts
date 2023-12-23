@@ -10,3 +10,7 @@ export const store=(data:ProjectData)=>{
     fs.writeFileSync(snippetsFilePath, JSON.stringify(data, null, 2));
 
 }
+
+function load () {
+    return JSON.parse(fs.readFileSync(snippetsFilePath, 'utf8'));
+  }
