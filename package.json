@@ -10,7 +10,7 @@
     "tflow": "./bin/tflow.js"
   },
   "scripts": {
-    "build": " tsc",
+    "build": "rm -rf dist && tsc",
     "start": "yarn build && node dist/index.js",
     "test": "echo \"Error: no test specified\" && exit 0"
   },
