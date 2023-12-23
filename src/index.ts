@@ -6,6 +6,7 @@ import { add } from './commands/add';
 import { update } from './commands/update';
 import { complete } from './commands/complete';
 import { deleteTask } from './commands/delete';
+import { list } from './commands/list';
  
 const packagejson = JSON.parse(fs.readFileSync("package.json", "utf8"));
 program.name('tflow').version(packagejson.version).description(packagejson.description);
@@ -36,5 +37,11 @@ program
     .command('delete <taskId>')
     .description('Delete a task')
     .action(deleteTask);
+
+
+program
+    .command('list')
+    .description('List all tasks')
+    .action(list);
 
 program.parse(process.argv);
