@@ -4,6 +4,7 @@ import { program } from 'commander';
 import {init } from './commands/init';
 import { add } from './commands/add';
 import { update } from './commands/update';
+import { complete } from './commands/complete';
  
 const packagejson = JSON.parse(fs.readFileSync("package.json", "utf8"));
 program.name('tflow').version(packagejson.version).description(packagejson.description);
@@ -24,5 +25,10 @@ program
     .command('update <taskId>')
     .description('Update a task')
     .action(update);
+
+    program
+    .command('complete <taskId>')
+    .description('Complete a task')
+    .action(complete);
 
 program.parse(process.argv);

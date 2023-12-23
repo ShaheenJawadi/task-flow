@@ -1,6 +1,5 @@
 import { load, store } from "../utils/storage";
-import { ProjectData, Task } from "../types";
-
+ 
 import inquirer from 'inquirer';
 export const update= async (id:string)=>{
 
