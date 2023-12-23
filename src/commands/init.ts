@@ -2,7 +2,7 @@ import { store } from "../utils/storage";
 import { ProjectData } from "../types";
 
 import inquirer from 'inquirer';
-export const init= async (projectName: string, description: string)=>{
+export const init= async ()=>{
 
 
     const answers = await inquirer.prompt([
@@ -12,8 +12,8 @@ export const init= async (projectName: string, description: string)=>{
     ]);
 
 
-    const newSnippet:ProjectData = {  ...answers , tasks:[] };
-    store(newSnippet);
+    const newProject:ProjectData = {  ...answers , tasks:[] };
+    store(newProject);
     console.log('Project initialized successfully.');
      
 }
