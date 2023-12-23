@@ -29,10 +29,8 @@
   "dependencies": {
     "commander": "^11.1.0",
     "inquirer": "^8.0.0"
-  },
-
-  "publishConfig": {
-    "@shaheenjawadi:registry": "https://npm.pkg.github.com"
   }
+
+
   
 }
