@@ -13,6 +13,11 @@
     "build": " tsc",
     "start": "yarn build && node dist/index.js"
   },
+  "keywords": [    
+    "task-manager",
+    "cli",
+    "nodejs"
+  ],
   "devDependencies": {
     "@types/commander": "^2.12.2",
     "@types/inquirer": "^9.0.7",
